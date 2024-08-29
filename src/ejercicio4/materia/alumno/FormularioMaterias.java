@@ -55,18 +55,23 @@ public class FormularioMaterias extends javax.swing.JFrame {
 
         jInternalFrame1.setVisible(true);
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 204, 204));
         jLabel2.setText("Formulario de Materias");
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 204, 204));
         jLabel3.setText("CODIGO DE LA MATERIA:");
 
-        jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 204, 204));
         jLabel4.setText("NOMBRE DE LA MATERIA:");
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 204, 204));
         jLabel5.setText("AÑO AL QUE PERTENECE");
 
+        jb1.setForeground(new java.awt.Color(0, 204, 204));
         jb1.setText("Guardar");
         jb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +79,7 @@ public class FormularioMaterias extends javax.swing.JFrame {
             }
         });
 
+        jb2.setForeground(new java.awt.Color(0, 204, 204));
         jb2.setText("Nuevo");
         jb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,6 +87,7 @@ public class FormularioMaterias extends javax.swing.JFrame {
             }
         });
 
+        jb3.setForeground(new java.awt.Color(0, 204, 204));
         jb3.setText("Salir");
         jb3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

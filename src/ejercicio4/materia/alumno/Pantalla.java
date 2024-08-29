@@ -43,6 +43,7 @@ public class Pantalla extends javax.swing.JFrame {
         jDesktopPane1.setForeground(new java.awt.Color(110, 199, 128));
 
         jButton1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 204, 204));
         jButton1.setText("Alta de Materias");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,6 +52,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 204, 204));
         jButton2.setText("Formulario de Inscripcion");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,6 +61,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
 
         jButton3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 204, 204));
         jButton3.setText("Alta de Alumnos");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

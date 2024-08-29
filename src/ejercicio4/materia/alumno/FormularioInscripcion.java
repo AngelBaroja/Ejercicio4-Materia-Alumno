@@ -49,6 +49,7 @@ public class FormularioInscripcion extends javax.swing.JFrame {
         jInternalFrame1.setVisible(true);
 
         jButton3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 204, 204));
         jButton3.setText("Salir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,6 +58,7 @@ public class FormularioInscripcion extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 204, 204));
         jButton4.setText("Inscribir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,13 +66,16 @@ public class FormularioInscripcion extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 204, 204));
         jLabel4.setText("ELIJA UN ALUMNO:");
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 204, 204));
         jLabel5.setText("ELIJA UNA MATERIA:");
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 204, 204));
         jLabel6.setText("Formulario de Inscripcion");
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
