@@ -177,23 +177,27 @@ public class FormularioMaterias extends javax.swing.JFrame {
     }//GEN-LAST:event_jb3ActionPerformed
 
     private void jb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb1ActionPerformed
-           int idMateria= Integer.parseInt(jt1.getText());
-           String nombre = jt2.getText();
-           boolean check = true;
-           int año = Integer.parseInt(jt3.getText());
-           for (Materia materia : listaMateria) {
-               if (materia.getIdMateria() == idMateria) {
-                   JOptionPane.showMessageDialog(null, "La materia ya se encuentra, ingrese otra", "ERROR!!!", JOptionPane.WARNING_MESSAGE);
-                   check = false;
-                   break;
-               }
-            
+        if(jt1.getText().equals("") || jt2.getText().equals("") || jt3.getText().equals("")){
+               JOptionPane.showMessageDialog(null, "Falta informacion, complete los datos", "ERROR!!!", JOptionPane.OK_OPTION);
+           }else{   
+                int idMateria= Integer.parseInt(jt1.getText());
+                   String nombre = jt2.getText();
+                   boolean check = true;
+                   int año = Integer.parseInt(jt3.getText());
+                   for (Materia materia : listaMateria) {
+                       if (materia.getIdMateria() == idMateria) {
+                           JOptionPane.showMessageDialog(null, "La materia ya se encuentra, ingrese otra", "ERROR!!!", JOptionPane.WARNING_MESSAGE);
+                           check = false;
+                           break;
+                       }
+
+                }
+                   if(check){
+                        Materia materia= new Materia(idMateria, año, nombre);
+                        listaMateria.add(materia);
+                        JOptionPane.showMessageDialog(null, "Materia Guardada","Formulario Materia", JOptionPane.INFORMATION_MESSAGE);
+                   }
         }
-           if(check){
-                Materia materia= new Materia(idMateria, año, nombre);
-                listaMateria.add(materia);
-                JOptionPane.showMessageDialog(null, "Materia Guardada","Formulario Materia", JOptionPane.INFORMATION_MESSAGE);
-           }
           
     }//GEN-LAST:event_jb1ActionPerformed
 

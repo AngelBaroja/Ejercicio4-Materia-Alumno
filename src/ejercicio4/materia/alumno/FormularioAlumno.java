@@ -178,21 +178,25 @@ public class FormularioAlumno extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        int legajo= Integer.parseInt(jt1.getText());
-        boolean check = true;
-        String apellido = jt2.getText();
-        String nombre = jt3.getText();
-        for (Alumno alumno : listaAlumno) {
-            if(alumno.getLegajo() == legajo){
-                JOptionPane.showMessageDialog(null, "El alumno ya se encuentra inscripto, ingrese otro", "ERROR!!!", JOptionPane.ERROR_MESSAGE);
-                check = false;
-                break;
+        if(jt1.getText().equals("") || jt2.getText().equals("") || jt3.getText().equals("")){
+               JOptionPane.showMessageDialog(null, "Falta informacion, complete los datos", "ERROR!!!", JOptionPane.OK_OPTION);
+        }else{
+            int legajo= Integer.parseInt(jt1.getText());
+            boolean check = true;
+            String apellido = jt2.getText();
+            String nombre = jt3.getText();
+            for (Alumno alumno : listaAlumno) {
+                if(alumno.getLegajo() == legajo){
+                    JOptionPane.showMessageDialog(null, "El alumno ya se encuentra inscripto, ingrese otro", "ERROR!!!", JOptionPane.ERROR_MESSAGE);
+                    check = false;
+                    break;
+                }
             }
-        }
-        if (check) {
-            Alumno alumno=new Alumno(legajo, apellido, nombre);
-            listaAlumno.add(alumno);
-            JOptionPane.showMessageDialog(null, "Alumno Guardado","Formulario Alumno", JOptionPane.INFORMATION_MESSAGE);
+            if (check) {
+                Alumno alumno=new Alumno(legajo, apellido, nombre);
+                listaAlumno.add(alumno);
+                JOptionPane.showMessageDialog(null, "Alumno Guardado","Formulario Alumno", JOptionPane.INFORMATION_MESSAGE);
+            }
         }
         
     }//GEN-LAST:event_jButton4ActionPerformed
